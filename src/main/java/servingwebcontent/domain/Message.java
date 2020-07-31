@@ -14,6 +14,10 @@ public class Message {
     @JoinColumn(name = "user_id")
     private User author;
 
+    public Message(String text, String tag) {
+
+    }
+
     public String getAuthorName(){
         return author!= null ? author.getUsername() : "<none>";
     }
